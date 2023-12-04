@@ -24,7 +24,6 @@ const routes: Routes = [
 })
 export class AuthRoutingModule {
   static components = [
-    LoginComponent,
     ForgotPasswordComponent
   ];
 

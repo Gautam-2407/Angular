@@ -10,7 +10,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     CommonModule,
     AuthRoutingModule,
   ],
-  declarations: [AuthRoutingModule.components, LoginComponent, ForgotPasswordComponent],
+  declarations: [AuthRoutingModule.components, ForgotPasswordComponent],
   providers: []
 })
 export class AuthModule { }

@@ -9,14 +9,14 @@
                 <p class="lead">Login to your account</p>
             </div>
             <div class="body">
-                <form class="form-auth-small" action="index.html">
+                <form class="form-auth-small" (submit)="login($event)">
                     <div class="form-group c_form_group">
                         <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter your email address" />
                     </div>
                     <div class="form-group c_form_group">
                         <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Enter your password">
+                        <input type="password" class="form-control" name="password" placeholder="Enter your password" />
                     </div>
                     <div class="form-group clearfix">
                         <label class="fancy-checkbox element-left">
@@ -27,10 +27,10 @@
                     <button type="submit" class="btn btn-dark btn-lg btn-block">LOGIN</button>
                     <div class="bottom">
                         <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a
-                                [routerLink]="['/forgot-password']" href="javascript:void(0)">
+                                [routerLink]="['/forgot-password']">
                                 Forgot password?</a></span>
-                        <span>Don't have an account? <a [routerLink]="['/pages/signup']"
-                                href="javascript:void(0)">Register</a></span>
+                        <span>Don't have an account? <a [routerLink]="['/pages/signup']">Register
+                        </a></span> 
                     </div>
                 </form>
             </div>
